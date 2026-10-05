@@ -1,0 +1,1212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MK Electric and Plumbing Services | Electrician &amp; Plumber in Madurai</title>
+  <meta name="description" content="MK Electric and Plumbing Services: fast, reliable home electrical and plumbing repairs in Madurai. Wiring, fans, lights, taps, leakage repair and emergency help. Call or WhatsApp us today." />
+  <meta name="theme-color" content="#0a1428" />
+  <meta property="og:title" content="MK Electric and Plumbing Services, Madurai" />
+  <meta property="og:description" content="Electrical and plumbing repairs for homes and businesses in Madurai, at a time that suits you." />
+  <meta property="og:type" content="website" />
+  <script>document.documentElement.classList.add("js");</script>
+  <!-- FAVICON: MK monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fff6c4'/%3E%3Cstop offset='.35' stop-color='%23ffc933'/%3E%3Cstop offset='.6' stop-color='%23c77700'/%3E%3Cstop offset='1' stop-color='%23ff9a1a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='50,3 93,27 93,73 50,97 7,73 7,27' fill='url(%23g)' stroke='url(%23g)' stroke-width='4' stroke-linejoin='round'/%3E%3Cpolygon points='50,12 85,32 85,68 50,88 15,68 15,32' fill='%23081634'/%3E%3Cg fill='none' stroke-width='9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M26 66V34l12 17 12-17v32' stroke='%23ffc933'/%3E%3Cpath d='M58 34v32M58 52l18-18M64 50l12 16' stroke='%2322d3ee'/%3E%3C/g%3E%3C/svg%3E" />
+
+  <style>
+    /* ============ DESIGN TOKENS ============ */
+    :root{
+      --navy-950:#050b18; --navy-900:#0a1428; --navy-800:#0f1d3a; --navy-700:#172a52;
+      --amber:#ffb703; --amber-600:#f59e0b; --orange:#ff7a1a;
+      --cyan:#22d3ee; --blue:#2f80ed; --wa:#25d366;
+      --ink:#0b1730; --body:#44546f; --muted:#9fb0cc;
+      --light:#f3f6fc; --white:#fff; --line:#e3e9f4;
+      --radius:18px; --shadow:0 10px 30px -12px rgba(10,20,40,.18);
+      --shadow-lg:0 24px 50px -18px rgba(10,20,40,.35);
+      --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{margin:0;font-family:var(--font);color:var(--body);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    img,svg{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    h1,h2,h3,h4{color:var(--ink);line-height:1.15;margin:0;letter-spacing:-.02em}
+    p{margin:0}
+    ul{list-style:none;margin:0;padding:0}
+    section{scroll-margin-top:76px}
+    .container{width:min(1300px,90%);margin-inline:auto}
+    .ic{width:1.5rem;height:1.5rem;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+    :focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:6px}
+
+    /* scroll progress */
+    .progress{position:fixed;top:0;left:0;height:4px;width:100%;z-index:100;transform-origin:left;transform:scaleX(0);background:linear-gradient(90deg,var(--amber),var(--orange),var(--cyan))}
+
+    /* ============ BUTTONS ============ */
+    .btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+      padding:.95rem 1.5rem;border-radius:14px;font-weight:700;font-size:1rem;border:2px solid transparent;cursor:pointer;
+      transition:transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;font-family:inherit}
+    .btn::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.45) 50%,transparent 70%);
+      transform:translateX(-120%);transition:transform .6s ease}
+    .btn:hover::after{transform:translateX(120%)}
+    .btn:hover{transform:translateY(-3px)}
+    .btn:active{transform:translateY(0)}
+    .btn .ic{transition:transform .25s ease}
+    .btn:hover .ic{transform:scale(1.15) rotate(-8deg)}
+    .btn-call{background:linear-gradient(135deg,var(--amber),var(--orange));color:#1a1200;box-shadow:0 10px 24px -8px rgba(255,150,10,.7)}
+    .btn-call:hover{box-shadow:0 16px 30px -8px rgba(255,150,10,.85)}
+    .btn-wa{background:var(--wa);color:#04210f;box-shadow:0 10px 24px -8px rgba(37,211,102,.6)}
+    .btn-wa:hover{box-shadow:0 16px 30px -8px rgba(37,211,102,.8)}
+    .btn-dark{background:var(--navy-900);color:#fff;box-shadow:0 10px 24px -10px rgba(5,11,24,.6)}
+    .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.3)}
+    .btn-ghost:hover{background:rgba(255,255,255,.08)}
+    .btn-lg{padding:1.1rem 1.8rem;font-size:1.05rem}
+    .btn-sm{padding:.65rem 1.1rem;font-size:.95rem;border-radius:12px}
+    .btn-pulse{animation:ringp 2.2s infinite}
+    @keyframes ringp{0%{box-shadow:0 10px 24px -8px rgba(255,150,10,.7),0 0 0 0 rgba(255,183,3,.55)}70%{box-shadow:0 10px 24px -8px rgba(255,150,10,.7),0 0 0 16px rgba(255,183,3,0)}100%{box-shadow:0 10px 24px -8px rgba(255,150,10,.7),0 0 0 0 rgba(255,183,3,0)}}
+
+    /* ============ HEADER ============ */
+    .site-header{position:sticky;top:0;z-index:50;background:rgba(10,20,40,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(255,255,255,.08);transition:box-shadow .3s,background .3s}
+    .site-header.scrolled{box-shadow:0 10px 30px -12px rgba(0,0,0,.6);background:rgba(5,11,24,.94)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:.8rem}
+    .brand{display:flex;align-items:center;gap:.65rem;color:#fff;font-weight:800;letter-spacing:-.01em;line-height:1.1}
+    .logo-box{flex:none;filter:drop-shadow(0 6px 14px rgba(255,170,10,.45));transition:transform .4s ease}
+    .logo-wrap{position:relative;display:block;width:52px;height:52px;overflow:hidden;clip-path:polygon(50% 3%,93% 27%,93% 73%,50% 97%,7% 73%,7% 27%)}
+    .logo-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.75) 50%,transparent 65%);transform:translateX(-130%);animation:logoshine 3.6s ease-in-out infinite}
+    @keyframes logoshine{0%,55%{transform:translateX(-130%)}100%{transform:translateX(130%)}}
+    .logo{width:100%;height:100%}
+    .brand:hover .logo-box{transform:rotate(-6deg) scale(1.08)}
+    .twinkle{transform-box:fill-box;transform-origin:center;animation:twinkle 2.2s ease-in-out infinite}
+    @keyframes twinkle{0%,100%{transform:scale(.55) rotate(0);opacity:.5}50%{transform:scale(1.3) rotate(45deg);opacity:1}}
+    .brand-text{font-size:.92rem;max-width:11.5rem}
+    .brand-text small{display:block;font-weight:600;color:var(--muted);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;margin-top:2px}
+    .nav-links{display:none;gap:.25rem;align-items:center}
+    .nav-links a{color:#cdd8ee;font-weight:600;font-size:.95rem;padding:.55rem .85rem;border-radius:10px;transition:color .2s,background .2s}
+    .nav-links a:hover{color:#fff;background:rgba(255,255,255,.08)}
+    .nav-cta{display:none}
+    .nav-right{display:flex;align-items:center;gap:.6rem}
+    .icon-btn{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:#fff;cursor:pointer}
+    .icon-btn.call{background:linear-gradient(135deg,var(--amber),var(--orange));color:#1a1200;border:0}
+    .icon-btn .ic{width:1.35rem;height:1.35rem}
+    .menu-btn .close{display:none}
+    .menu-btn[aria-expanded="true"] .open{display:none}
+    .menu-btn[aria-expanded="true"] .close{display:block}
+    .mobile-menu{display:none;border-top:1px solid rgba(255,255,255,.08);padding:.5rem 0 1rem}
+    .mobile-menu.open{display:block;animation:drop .3s ease}
+    @keyframes drop{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+    .mobile-menu a.link{display:block;color:#e4ebf8;font-weight:600;padding:.85rem .4rem;border-bottom:1px solid rgba(255,255,255,.06)}
+
+    /* ============ HERO ============ */
+    .hero{position:relative;overflow:hidden;background:var(--navy-900);color:#cdd8ee;padding:3.5rem 0 4.5rem}
+    .hero::before{content:"";position:absolute;inset:0;
+      background:
+        radial-gradient(600px 400px at 85% 10%,rgba(34,211,238,.20),transparent 60%),
+        radial-gradient(700px 500px at 5% 90%,rgba(255,183,3,.16),transparent 60%),
+        linear-gradient(180deg,var(--navy-900),var(--navy-950));}
+    .hero::after{content:"";position:absolute;inset:0;opacity:.35;pointer-events:none;
+      background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+      background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse at 50% 40%,#000 30%,transparent 75%);mask-image:radial-gradient(ellipse at 50% 40%,#000 30%,transparent 75%);
+      animation:gridmove 20s linear infinite}
+    @keyframes gridmove{to{background-position:44px 44px}}
+    .hero-grid{position:relative;z-index:1;display:grid;gap:2.5rem;align-items:center}
+    .pill{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem .85rem;border-radius:999px;background:rgba(255,183,3,.12);border:1px solid rgba(255,183,3,.35);color:#ffd35c;font-size:.82rem;font-weight:700;letter-spacing:.04em}
+    .pill .dot{width:8px;height:8px;border-radius:50%;background:#ffd35c;animation:pulse 2s infinite}
+    @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,211,92,.7)}70%{box-shadow:0 0 0 10px rgba(255,211,92,0)}100%{box-shadow:0 0 0 0 rgba(255,211,92,0)}}
+    .hero h1{color:#fff;font-size:clamp(1.9rem,4.4vw,3rem);margin:1.1rem 0 1.1rem;letter-spacing:-.03em}
+    .grad-a{background:linear-gradient(90deg,var(--amber),var(--orange),var(--amber));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 4s linear infinite}
+    .grad-b{background:linear-gradient(90deg,var(--cyan),var(--blue),var(--cyan));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 4s linear infinite}
+    @keyframes shine{to{background-position:200% 0}}
+    .hero p.lead{font-size:clamp(1.02rem,2.4vw,1.2rem);max-width:34rem;color:#b8c6e0}
+    .hero-cta{display:flex;flex-direction:column;gap:.8rem;margin-top:1.8rem}
+    .trust{display:grid;gap:.75rem;margin-top:2rem}
+    .trust li{display:flex;align-items:center;gap:.75rem;color:#e4ebf8;font-weight:600;font-size:.97rem}
+    .trust .tick{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:var(--amber)}
+    .trust li:nth-child(2) .tick{color:var(--cyan)}
+    .trust li:nth-child(3) .tick{color:#ff6b6b}
+
+    .visual{position:relative;width:min(440px,86vw);margin-inline:auto;aspect-ratio:1}
+    .visual svg.art{width:100%;height:100%;overflow:visible}
+    .ring-spin{transform-origin:240px 240px;animation:spin 40s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .bolt-glow{animation:flicker 4s ease-in-out infinite}
+    @keyframes flicker{0%,100%{filter:drop-shadow(0 0 18px rgba(255,183,3,.7))}45%{filter:drop-shadow(0 0 30px rgba(255,183,3,1))}50%{filter:drop-shadow(0 0 6px rgba(255,183,3,.4))}55%{filter:drop-shadow(0 0 32px rgba(255,183,3,1))}}
+    .drip{animation:drip 3.2s ease-in-out infinite}
+    @keyframes drip{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+    .spark{animation:blink 1.6s ease-in-out infinite}
+    .spark:nth-of-type(2){animation-delay:-.5s}.spark:nth-of-type(3){animation-delay:-1s}
+    @keyframes blink{0%,100%{opacity:0}50%{opacity:1}}
+    .ripple{transform-box:fill-box;transform-origin:center;animation:ripple 2.6s ease-out infinite}
+    .ripple.r2{animation-delay:-1.3s}
+    @keyframes ripple{0%{transform:scale(.4);opacity:.9}100%{transform:scale(2.4);opacity:0}}
+    .chip{position:absolute;display:flex;align-items:center;gap:.55rem;padding:.6rem .9rem;border-radius:14px;background:rgba(15,29,58,.82);
+      border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;font-weight:700;font-size:.82rem;box-shadow:0 14px 30px -10px rgba(0,0,0,.6);animation:float 6s ease-in-out infinite}
+    .chip .ic{width:1.1rem;height:1.1rem}
+    .chip.c1{top:6%;left:-2%;color:var(--amber)}
+    .chip.c2{bottom:12%;right:-2%;color:var(--cyan);animation-delay:-3s}
+    .chip.c3{bottom:2%;left:6%;color:#7ef0a8;animation-delay:-1.5s}
+    .chip span{color:#fff}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+    /* ============ MARQUEE ============ */
+    .marquee{overflow:hidden;background:linear-gradient(90deg,var(--amber),var(--orange));color:#1a1200;border-block:1px solid rgba(0,0,0,.08)}
+    .marquee-track{display:flex;width:max-content;animation:marq 32s linear infinite}
+    .marquee:hover .marquee-track{animation-play-state:paused}
+    .marquee-track span{display:inline-flex;align-items:center;gap:.9rem;padding:.8rem 1.2rem .8rem 0;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem;white-space:nowrap}
+    .marquee-track .ic{width:1rem;height:1rem;stroke-width:2.5}
+    @keyframes marq{to{transform:translateX(-50%)}}
+
+    /* ============ GENERIC SECTIONS ============ */
+    .section{padding:4.5rem 0}
+    .section.light{background:var(--light)}
+    .section.dark{background:var(--navy-900);color:#b8c6e0}
+    .section.dark h2,.section.dark h3{color:#fff}
+    .eyebrow{display:inline-block;font-size:.8rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);margin-bottom:.7rem}
+    .dark .eyebrow{color:var(--amber)}
+    .section-head{max-width:40rem;margin-bottom:2.8rem}
+    .section-head.center{margin-inline:auto;text-align:center}
+    .section-head h2{font-size:clamp(1.8rem,4.6vw,2.7rem)}
+    .section-head p{margin-top:.9rem;font-size:1.05rem}
+
+    /* ============ SERVICES ============ */
+    .cards{display:grid;gap:1.1rem;grid-template-columns:1fr}
+    .card{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;box-shadow:var(--shadow);
+      transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;overflow:hidden}
+    .card::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:linear-gradient(90deg,var(--amber),var(--orange));transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+    .card.water::before{background:linear-gradient(90deg,var(--cyan),var(--blue))}
+    .card::after{content:"";position:absolute;right:-40px;bottom:-40px;width:130px;height:130px;border-radius:50%;background:radial-gradient(circle,rgba(255,183,3,.18),transparent 70%);transition:transform .5s ease}
+    .card.water::after{background:radial-gradient(circle,rgba(34,211,238,.2),transparent 70%)}
+    .card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
+    .card:hover::before{transform:scaleX(1)}
+    .card:hover::after{transform:scale(1.6)}
+    .icon-box{width:54px;height:54px;border-radius:15px;display:grid;place-items:center;margin-bottom:1.1rem;
+      background:linear-gradient(135deg,#fff4d6,#ffe2a8);color:#b86b00;transition:transform .3s ease}
+    .card.water .icon-box{background:linear-gradient(135deg,#d9f7fd,#bfe6ff);color:#0a6a99}
+    .card.urgent .icon-box{background:linear-gradient(135deg,#ffe0e0,#ffc1c1);color:#c0262d}
+    .card:hover .icon-box{transform:scale(1.1) rotate(-8deg)}
+    .card h3{font-size:1.15rem;margin-bottom:.45rem}
+    .card p{font-size:.96rem;position:relative;z-index:1}
+
+    /* ============ WHY ============ */
+    .why{position:relative;overflow:hidden}
+    .why::before{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(34,211,238,.18),transparent 65%);animation:float 9s ease-in-out infinite}
+    .why::after{content:"";position:absolute;left:-120px;bottom:-140px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(255,183,3,.14),transparent 65%);animation:float 11s ease-in-out infinite reverse}
+    .why-grid{position:relative;z-index:1;display:grid;gap:1.1rem;grid-template-columns:1fr}
+    .why-card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:1.6rem;
+      transition:transform .3s ease,border-color .3s ease,background .3s ease}
+    .why-card:hover{transform:translateY(-6px);border-color:rgba(255,183,3,.5);background:rgba(255,255,255,.08)}
+    .why-card .num{font-size:.8rem;font-weight:800;letter-spacing:.14em;color:var(--amber);margin-bottom:.9rem;display:flex;align-items:center;gap:.6rem}
+    .why-card .num .ic{width:1.9rem;height:1.9rem;padding:.35rem;border-radius:10px;background:rgba(255,183,3,.14);transition:transform .4s}
+    .why-card:hover .num .ic{transform:rotate(360deg)}
+    .why-card h3{font-size:1.2rem;margin-bottom:.5rem}
+    .why-card p{font-size:.96rem;color:#aebcd8}
+
+    /* ============ ABOUT ============ */
+    .about-grid{display:grid;gap:2.5rem;align-items:center}
+    .about-copy p{font-size:1.05rem}
+    .about-copy p+p{margin-top:1rem}
+    .places{margin-top:1.6rem}
+    .places h3{font-size:1rem;margin-bottom:.8rem}
+    .place-tags{display:flex;flex-wrap:wrap;gap:.55rem}
+    .ptag{display:inline-flex;align-items:center;gap:.45rem;padding:.5rem .85rem;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:700;font-size:.9rem;color:var(--ink);
+      box-shadow:0 4px 10px -6px rgba(10,20,40,.2);transition:transform .25s,box-shadow .25s}
+    .ptag:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+    .ptag .ic{width:1rem;height:1rem;color:var(--orange)}
+    .ptag.main{background:linear-gradient(135deg,var(--amber),var(--orange));border-color:transparent;color:#1a1200}
+    .ptag.main .ic{color:#1a1200}
+    .house-card{position:relative;border-radius:26px;padding:1.2rem;background:linear-gradient(150deg,var(--navy-800),var(--navy-950));box-shadow:var(--shadow-lg);overflow:hidden}
+    .house-card::before{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(255,183,3,.3),transparent 65%)}
+    .house-card::after{content:"";position:absolute;left:-70px;bottom:-70px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(34,211,238,.25),transparent 65%)}
+    .house-card svg{position:relative;z-index:1;width:100%;height:auto}
+    .house-card figcaption{position:relative;z-index:1;text-align:center;color:#aebcd8;font-size:.85rem;margin-top:.4rem}
+    .flow{stroke-dasharray:6 10;animation:flow 1.2s linear infinite}
+    .flow.slow{animation-duration:2s}
+    @keyframes flow{to{stroke-dashoffset:-32}}
+    .fan{transform-box:fill-box;transform-origin:center;animation:spin 1.6s linear infinite}
+    .bulbglow{animation:glowp 2.4s ease-in-out infinite}
+    @keyframes glowp{0%,100%{opacity:.25}50%{opacity:.7}}
+    .fall{animation:fall 1.4s linear infinite}
+    .fall.d2{animation-delay:-.45s}.fall.d3{animation-delay:-.9s}
+    @keyframes fall{0%{transform:translateY(0);opacity:0}15%{opacity:1}100%{transform:translateY(34px);opacity:0}}
+
+    /* ============ EMERGENCY ============ */
+    .emergency{position:relative;overflow:hidden;background:linear-gradient(120deg,var(--amber) 0%,var(--orange) 100%);padding:4rem 0;color:#2a1600}
+    .emergency::before{content:"";position:absolute;inset:0;opacity:.18;
+      background-image:repeating-linear-gradient(-45deg,#000 0 14px,transparent 14px 28px);-webkit-mask-image:linear-gradient(90deg,transparent 40%,#000);mask-image:linear-gradient(90deg,transparent 40%,#000);animation:stripe 3s linear infinite}
+    @keyframes stripe{to{background-position:40px 0}}
+    .emergency .wrap{position:relative;display:grid;gap:1.8rem;align-items:center}
+    .emergency h2{color:var(--navy-950);font-size:clamp(1.8rem,5vw,3rem)}
+    .emergency p{font-size:1.15rem;font-weight:600;margin-top:.6rem}
+    .emergency .actions{display:flex;flex-direction:column;gap:.8rem}
+    .emergency .flag{display:inline-flex;align-items:center;gap:.5rem;font-weight:800;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.9rem;color:var(--navy-950)}
+    .emergency .flag .ic{animation:pulse-ic 1.4s ease-in-out infinite}
+    @keyframes pulse-ic{50%{transform:scale(1.3)}}
+
+    /* ============ HOW IT WORKS ============ */
+    .steps{display:grid;gap:1.4rem;position:relative}
+    .step{position:relative;text-align:center;padding:1.6rem 1.4rem;border-radius:var(--radius);background:var(--light);border:1px solid var(--line);transition:transform .3s,box-shadow .3s}
+    .step:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+    .step .pic{width:92px;height:92px;margin:0 auto .6rem}
+    .step .badge{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;margin-bottom:.6rem;color:#fff;font-weight:800;background:linear-gradient(135deg,var(--navy-800),var(--navy-700));box-shadow:0 0 0 4px #fff,0 0 0 6px var(--amber)}
+    .step h3{font-size:1.25rem;margin-bottom:.4rem}
+    .shake{transform-box:fill-box;transform-origin:center;animation:shake 1.6s ease-in-out infinite}
+    @keyframes shake{0%,60%,100%{transform:rotate(0)}10%,30%,50%{transform:rotate(-8deg)}20%,40%{transform:rotate(8deg)}}
+    .wave{animation:blink 1.6s ease-in-out infinite}
+    .wave.w2{animation-delay:-.5s}.wave.w3{animation-delay:-1s}
+    .hop{transform-box:fill-box;transform-origin:bottom;animation:hop 1.2s ease-in-out infinite}
+    @keyframes hop{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    .popin{transform-box:fill-box;transform-origin:center;animation:popin 2.4s ease-in-out infinite}
+    @keyframes popin{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+    .flex-card{margin-top:2rem;display:flex;flex-direction:column;gap:.8rem;align-items:center;text-align:center;padding:1.4rem 1.6rem;border-radius:20px;background:linear-gradient(135deg,var(--navy-800),var(--navy-950));color:#cdd8ee}
+    .flex-card .ib{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;background:rgba(255,183,3,.14);color:var(--amber);flex:none}
+    .flex-card h3{color:#fff;font-size:1.2rem}
+
+    /* ============ TESTIMONIALS ============ */
+    .t-grid{display:grid;gap:1.1rem;grid-template-columns:1fr}
+    .quote{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:1rem;transition:transform .3s,box-shadow .3s;position:relative;overflow:hidden}
+    .quote::before{content:"\201C";position:absolute;right:16px;top:-14px;font-size:6rem;font-weight:800;color:rgba(255,183,3,.2);line-height:1}
+    .quote:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+    .stars{display:flex;gap:2px;color:var(--amber-600)}
+    .stars .ic{width:1.1rem;height:1.1rem;fill:currentColor;stroke:none}
+    .quote blockquote{margin:0;color:var(--ink);font-size:1.02rem}
+    .who{display:flex;align-items:center;gap:.8rem;margin-top:auto}
+    .avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--blue),var(--cyan))}
+    .quote:nth-child(2) .avatar{background:linear-gradient(135deg,var(--amber),var(--orange));color:#1a1200}
+    .quote:nth-child(3) .avatar{background:linear-gradient(135deg,#12a150,#7ef0a8);color:#04210f}
+    .who strong{display:block;color:var(--ink);line-height:1.2}
+    .who span{font-size:.85rem}
+    .note{margin-top:1.6rem;text-align:center;font-size:.88rem;color:#6b7b97;font-style:italic}
+
+    /* ============ SERVICE AREA ============ */
+    .area-grid{display:grid;gap:2rem;align-items:center}
+    .area-badge{display:inline-flex;align-items:center;gap:.7rem;margin-top:1.4rem;padding:.9rem 1.3rem;border-radius:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);color:#fff;font-weight:800;font-size:1.3rem}
+    .area-badge .ic{color:var(--amber);width:1.7rem;height:1.7rem}
+    .area-note{margin-top:1.1rem;font-size:.98rem;color:#aebcd8;max-width:32rem}
+    .area-art{width:min(340px,80vw);margin-inline:auto}
+    .area-art svg{width:100%;height:auto;overflow:visible}
+    .pinring{transform-box:fill-box;transform-origin:center;animation:ripple 2.4s ease-out infinite}
+    .pinring.p2{animation-delay:-1.2s}
+    .pinbob{animation:hop 1.6s ease-in-out infinite;transform-box:fill-box;transform-origin:bottom}
+
+    /* ============ CONTACT ============ */
+    .contact-grid{display:grid;gap:1.6rem}
+    .info-card{background:linear-gradient(150deg,var(--navy-800),var(--navy-950));color:#cdd8ee;border-radius:24px;padding:2rem;box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
+    .info-card::after{content:"";position:absolute;right:-60px;bottom:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(255,183,3,.25),transparent 65%)}
+    .info-card h3{color:#fff;font-size:1.4rem;margin-bottom:1.2rem}
+    .info-list{display:grid;gap:1.2rem;position:relative;z-index:1}
+    .info-list li{display:flex;gap:.9rem;align-items:flex-start}
+    .info-list .ib{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--amber);flex:none}
+    .info-list small{display:block;color:var(--muted);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+    .info-list .v{color:#fff;font-weight:800;font-size:1.25rem;letter-spacing:.01em}
+    .info-list .v.sm{font-size:1rem;font-weight:600;color:#dbe5f7}
+    .form-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:2rem;box-shadow:var(--shadow)}
+    .form-card h3{font-size:1.4rem;margin-bottom:.3rem}
+    .form-card>div>p{margin-bottom:1.3rem}
+    .field{margin-bottom:1.05rem}
+    .field label{display:block;font-weight:700;font-size:.9rem;color:var(--ink);margin-bottom:.4rem}
+    .field label em{color:#d6342b;font-style:normal}
+    .field label span{font-weight:500;color:#6b7b97}
+    .input{width:100%;padding:.9rem 1rem;border-radius:12px;border:1.5px solid #d3dcec;background:#f9fbff;font:inherit;color:var(--ink);transition:border-color .2s,box-shadow .2s,background .2s}
+    .input:focus{outline:none;border-color:var(--blue);background:#fff;box-shadow:0 0 0 4px rgba(47,128,237,.18)}
+    textarea.input{min-height:110px;resize:vertical}
+    .input[aria-invalid="true"]{border-color:#d6342b;background:#fff7f6}
+    .err{display:none;color:#c0262d;font-size:.85rem;font-weight:600;margin-top:.35rem}
+    .field.bad .err{display:block}
+    .form-card form .btn{width:100%}
+    .fine{font-size:.82rem;color:#6b7b97;text-align:center;margin-top:.8rem}
+    .success{display:none;text-align:center;padding:1.5rem .5rem}
+    .success.show{display:block;animation:pop .5s ease}
+    @keyframes pop{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
+    .success .big{width:84px;height:84px;margin:0 auto 1.2rem;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#12a150,#7ef0a8);color:#fff;box-shadow:0 14px 30px -10px rgba(18,161,80,.6)}
+    .success .big .ic{width:2.6rem;height:2.6rem;stroke-width:3}
+    .success h3{font-size:1.5rem;margin-bottom:.5rem}
+    .success .btn{margin-top:1.3rem}
+
+    /* ============ FOOTER ============ */
+    .site-footer{background:var(--navy-950);color:#9fb0cc;padding:3.5rem 0 2.5rem}
+    .foot-grid{display:grid;gap:2rem;grid-template-columns:1fr}
+    .site-footer h4{color:#fff;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1rem}
+    .site-footer li{margin-bottom:.55rem}
+    .site-footer a:hover{color:var(--amber)}
+    .foot-brand p{margin-top:1rem;max-width:22rem;font-size:.95rem}
+    .foot-contact a{display:inline-flex;align-items:center;gap:.6rem;font-weight:600}
+    .foot-contact .ic{width:1.1rem;height:1.1rem;color:var(--amber)}
+    .copy{margin-top:2.5rem;padding-top:1.4rem;border-top:1px solid rgba(255,255,255,.08);display:flex;flex-direction:column;gap:.4rem;font-size:.88rem}
+
+    /* ============ REVEAL ============ */
+    .js .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+    .js .reveal.left{transform:translateX(-36px)}
+    .js .reveal.right{transform:translateX(36px)}
+    .js .reveal.zoom{transform:scale(.9)}
+    .js .reveal.in{opacity:1;transform:none}
+
+    /* ============ BREAKPOINTS ============ */
+    @media (min-width:600px){
+      .hero-cta,.emergency .actions{flex-direction:row;flex-wrap:wrap}
+      .cards{grid-template-columns:repeat(2,1fr)}
+      .why-grid{grid-template-columns:repeat(2,1fr)}
+      .t-grid{grid-template-columns:repeat(2,1fr)}
+      .copy{flex-direction:row;justify-content:space-between}
+      .foot-grid{grid-template-columns:1fr 1fr}
+      .flex-card{flex-direction:row;text-align:left}
+    }
+    @media (min-width:900px){
+      .nav-links{display:flex}
+      .nav-cta{display:inline-flex}
+      .menu-btn,.mobile-menu,.icon-btn.call{display:none!important}
+      .brand-text{font-size:1rem;max-width:none}
+      .hero{padding:5.5rem 0 6.5rem}
+      .hero-grid{grid-template-columns:1.1fr .9fr;gap:3rem}
+      .section{padding:6rem 0}
+      .about-grid{grid-template-columns:.95fr 1.05fr;gap:4rem}
+      .emergency .wrap{grid-template-columns:1.3fr 1fr}
+      .emergency .actions{justify-content:flex-end}
+      .steps{grid-template-columns:repeat(3,1fr);gap:2rem}
+      .steps::before{content:"";position:absolute;top:4.4rem;left:16%;right:16%;border-top:3px dashed rgba(255,183,3,.7);z-index:0}
+      .step{z-index:1}
+      .t-grid{grid-template-columns:repeat(3,1fr)}
+      .area-grid{grid-template-columns:1.1fr .9fr;gap:4rem}
+      .contact-grid{grid-template-columns:.85fr 1.15fr;gap:2rem;align-items:stretch}
+      .foot-grid{grid-template-columns:1.4fr 1fr 1fr 1.2fr}
+    }
+    @media (min-width:1100px){
+      .cards{grid-template-columns:repeat(3,1fr)}
+      .why-grid{grid-template-columns:repeat(4,1fr)}
+    }
+
+    .h2-lg{font-size:clamp(1.8rem,4.6vw,2.7rem)}
+    .area-lead{margin-top:1rem;font-size:1.05rem}
+    .contact-left{display:flex;flex-direction:column;gap:1.6rem}
+    .crew-card{position:relative;flex:1;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;border-radius:24px;padding:1.6rem 1.6rem 0;
+      background:linear-gradient(150deg,var(--navy-800),var(--navy-950));box-shadow:var(--shadow-lg);overflow:hidden}
+    .crew-card::before{content:"";position:absolute;left:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(255,183,3,.28),transparent 65%)}
+    .crew-card::after{content:"";position:absolute;right:-70px;bottom:-70px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(34,211,238,.25),transparent 65%)}
+    .crew-card figcaption{position:relative;z-index:1}
+    .crew-card figcaption strong{display:block;color:#fff;font-size:1.25rem;letter-spacing:-.01em}
+    .crew-card figcaption span{display:block;color:#aebcd8;font-size:.95rem;margin-top:.3rem}
+    .crew-card svg{position:relative;z-index:1;width:100%;height:auto;margin-top:1rem}
+    .bob{animation:bob 3.4s ease-in-out infinite}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+
+    /* ============ MOBILE TYPE SCALE: headings 24px, body 14px ============ */
+    @media (max-width:599px){
+      body{font-size:14px}
+      .hero h1{font-size:24px;line-height:1.25}
+      .section-head h2,.h2-lg,.emergency h2{font-size:24px;line-height:1.25}
+      .hero p.lead,.section-head p,.area-lead,.card p,.why-card p,.about-copy p,.emergency p,.area-note,.quote blockquote,.foot-brand p,.trust li,.info-list .v.sm,.crew-card figcaption span{font-size:14px}
+      .card h3,.why-card h3{font-size:17px}
+      .step h3,.flex-card h3{font-size:18px}
+      .info-card h3,.form-card h3,.success h3,.crew-card figcaption strong{font-size:20px}
+      .section{padding:3.5rem 0}
+      .input{font-size:16px}
+    }
+
+    @media (prefers-reduced-motion:reduce){
+      *,*::before,*::after{animation:none!important;transition:none!important}
+      html{scroll-behavior:auto}
+      .js .reveal{opacity:1;transform:none}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- ICON + LOGO SPRITE (inline SVG, no external libraries) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="lgRing" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff6c4"/><stop offset=".3" stop-color="#ffc933"/><stop offset=".55" stop-color="#c77700"/><stop offset=".8" stop-color="#ffd35c"/><stop offset="1" stop-color="#ff9a1a"/></linearGradient>
+      <radialGradient id="lgInner" cx="50%" cy="30%" r="80%"><stop offset="0" stop-color="#2d5aa3"/><stop offset=".55" stop-color="#112651"/><stop offset="1" stop-color="#050c1c"/></radialGradient>
+      <linearGradient id="lgGloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".4"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+      <linearGradient id="lgGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff1a8"/><stop offset=".5" stop-color="#ffb703"/><stop offset="1" stop-color="#ff7a1a"/></linearGradient>
+      <linearGradient id="lgCyan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c8f9ff"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#2f80ed"/></linearGradient>
+
+      <symbol id="logo" viewBox="0 0 100 100">
+        <!-- metallic gold hexagon ring -->
+        <polygon points="50,3 93,27 93,73 50,97 7,73 7,27" fill="url(#lgRing)" stroke="url(#lgRing)" stroke-width="4" stroke-linejoin="round"/>
+        <!-- deep navy glass face -->
+        <polygon points="50,11 86,31.5 86,68.5 50,89 14,68.5 14,31.5" fill="url(#lgInner)" stroke="#3a1f00" stroke-opacity=".45" stroke-width="1.5" stroke-linejoin="round"/>
+        <polygon points="50,14 83,32.5 83,67.5 50,86 17,67.5 17,32.5" fill="none" stroke="#ffd35c" stroke-opacity=".5" stroke-width="1"/>
+        <!-- glossy highlight -->
+        <path d="M14 31.5 50 11 86 31.5V47Q50 60 14 47Z" fill="url(#lgGloss)"/>
+        <!-- bolt + drop -->
+        <g transform="translate(-4 0)">
+          <path d="M48 18 36 32h7l-3 10 14-15h-7z" fill="url(#lgGold)" stroke="#fff1a8" stroke-width=".8" stroke-linejoin="round"/>
+          <path d="M65 20s-8.5 9-8.5 15.5a8.5 8.5 0 0 0 17 0C73.5 29 65 20 65 20z" fill="url(#lgCyan)" stroke="#c8f9ff" stroke-width=".8"/>
+          <path d="M61 33c0-3 2-6 4-9" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="1.6" stroke-linecap="round"/>
+        </g>
+        <!-- MK letters -->
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <g transform="translate(0 2)" stroke="#000" stroke-opacity=".4" stroke-width="7.5">
+            <path d="M27 66V42l10.5 13.500L48 42v24"/><path d="M55 42v24M55 54.500 72 42M60.500 52 74 66"/>
+          </g>
+          <path d="M27 66V42l10.5 13.500L48 42v24" stroke="url(#lgGold)" stroke-width="7"/>
+          <path d="M55 42v24M55 54.500 72 42M60.500 52 74 66" stroke="url(#lgCyan)" stroke-width="7"/>
+        </g>
+        <!-- sparkle -->
+        <path class="twinkle" d="M76 24l1.600 4.400L82 30l-4.400 1.600L76 36l-1.600-4.400L70 30l4.400-1.600z" fill="#fff"/>
+      </symbol>
+
+      <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></symbol>
+      <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 2v6M15 2v6M6 8h12v3a6 6 0 0 1-12 0V8zM12 17v5"/></symbol>
+      <symbol id="i-switch" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="5"/><circle cx="16" cy="12" r="2.5"/></symbol>
+      <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3z"/></symbol>
+      <symbol id="i-fan" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1.8"/><path d="M12 10.2C12 6 10 3 7.5 3.5 5.5 4 6 8 10.5 10M13.8 12c4.2 0 7.2-2 6.7-4.5C20 5.5 16 6 14 10.5M12 13.8c0 4.2 2 7.2 4.5 6.7 2-.5 1.5-4.5-3-6.5M10.2 12C6 12 3 14 3.5 16.5 4 18.5 8 18 10 13.5"/></symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5 5L3 18l3 3 6.7-6.7a4 4 0 0 0 5-5l-2.7 2.7-2.3-.7-.7-2.3 2.7-2.7z"/></symbol>
+      <symbol id="i-pipe" viewBox="0 0 24 24"><path d="M2 6h9a4 4 0 0 1 4 4v11M2 3v6M12 21h6M13 3v3"/></symbol>
+      <symbol id="i-bath" viewBox="0 0 24 24"><path d="M3 12h18v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3zM6 12V6a2 2 0 0 1 4 0M7 19l-1 2M17 19l1 2"/></symbol>
+      <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></symbol>
+      <symbol id="i-siren" viewBox="0 0 24 24"><path d="M7 18v-6a5 5 0 0 1 10 0v6M5 18h14v3H5zM12 2v2M4.5 5.5 6 7M19.5 5.5 18 7"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+      <symbol id="i-wa" viewBox="0 0 24 24"><path d="M3 21l1.7-5A9 9 0 1 1 8 19.3L3 21z"/><path d="M9 9c0 3 3 6 6 6l1-1.5-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2L9 9z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></symbol>
+      <symbol id="i-tag" viewBox="0 0 24 24"><path d="M20 12l-8 8-9-9V3h8l9 9z"/><circle cx="7.5" cy="7.5" r="1.2"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4 6.5 20.3l1-6.2L3 9.7l6.2-.9L12 3z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+      <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 10v10h14V10M10 20v-6h4v6"/></symbol>
+      <symbol id="i-building" viewBox="0 0 24 24"><path d="M4 21V5l8-2v18M12 9h8v12M7 9h2M7 13h2M7 17h2M15 13h2M15 17h2M4 21h16"/></symbol>
+      <symbol id="i-shop" viewBox="0 0 24 24"><path d="M3 9l1.5-5h15L21 9M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0M5 12v9h14v-9M10 21v-5h4v5"/></symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V4h6v3M3 13h18"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="nav">
+        <a href="#home" class="brand" aria-label="MK Electric and Plumbing Services - home">
+          <span class="logo-box"><span class="logo-wrap"><svg class="logo" viewBox="0 0 100 100" role="img" aria-label="MK Electric and Plumbing Services logo"><use href="#logo"/></svg></span></span>
+          <span class="brand-text">MK Electric and Plumbing Services</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#why">Why Us</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-right">
+          <a class="btn btn-call btn-sm nav-cta" data-call href="tel:+919443831696">
+            <svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg> Call Now
+          </a>
+          <a class="icon-btn call" data-call href="tel:+919443831696" aria-label="Call now"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></a>
+          <button class="icon-btn menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle menu">
+            <svg class="ic open" aria-hidden="true"><use href="#i-menu"/></svg>
+            <svg class="ic close" aria-hidden="true"><use href="#i-x"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a class="link" href="#home">Home</a>
+        <a class="link" href="#services">Services</a>
+        <a class="link" href="#about">About</a>
+        <a class="link" href="#why">Why Us</a>
+        <a class="link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <span class="pill reveal"><span class="dot"></span> Serving homes across Madurai</span>
+          <h1 id="hero-title" class="reveal" style="--d:.08s">
+            Reliable <span class="grad-a">Electrical</span> &amp; <span class="grad-b">Plumbing</span> Services in Madurai, When You Need Them
+          </h1>
+          <p class="lead reveal" style="--d:.16s">
+            From a tripping switch to a leaking tap, MK Electric and Plumbing Services fixes household problems fast and neatly. Friendly technicians, clear pricing and work you can rely on.
+          </p>
+          <div class="hero-cta reveal" style="--d:.24s">
+            <a class="btn btn-call btn-lg btn-pulse" data-call href="tel:+919443831696">
+              <svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg> Call Now
+            </a>
+            <a class="btn btn-ghost btn-lg" data-wa href="https://wa.me/919443831696" target="_blank" rel="noopener">
+              <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg> WhatsApp Us
+            </a>
+          </div>
+          <ul class="trust reveal" style="--d:.32s" aria-label="Why customers trust us">
+            <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-bolt"/></svg></span> Fast Response</li>
+            <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg></span> Professional Service</li>
+            <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-siren"/></svg></span> Available for Emergencies</li>
+          </ul>
+        </div>
+
+        <div class="visual reveal zoom" style="--d:.2s">
+          <svg class="art" viewBox="0 0 480 480" role="img" aria-label="Illustration of an electric lightning bolt, a plug, a pipe and a water drop representing electrical and plumbing services">
+            <defs>
+              <radialGradient id="bgG" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#1b3a73"/><stop offset="1" stop-color="#0a1428"/></radialGradient>
+              <linearGradient id="boltG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe27a"/><stop offset=".5" stop-color="#ffb703"/><stop offset="1" stop-color="#ff7a1a"/></linearGradient>
+              <linearGradient id="waterG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7cf0ff"/><stop offset="1" stop-color="#2f80ed"/></linearGradient>
+              <linearGradient id="pipeG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5e7399"/><stop offset=".5" stop-color="#9fb4d6"/><stop offset="1" stop-color="#5e7399"/></linearGradient>
+            </defs>
+            <circle cx="240" cy="240" r="200" fill="url(#bgG)" stroke="rgba(255,255,255,.14)" stroke-width="2"/>
+            <g class="ring-spin" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="2" stroke-dasharray="3 12" stroke-linecap="round"><circle cx="240" cy="240" r="228"/></g>
+            <g class="ring-spin" style="animation-direction:reverse;animation-duration:60s" fill="none" stroke="rgba(34,211,238,.35)" stroke-width="2" stroke-dasharray="40 24" stroke-linecap="round"><circle cx="240" cy="240" r="170"/></g>
+            <!-- pipe -->
+            <g>
+              <rect x="64" y="318" width="170" height="30" rx="8" fill="url(#pipeG)"/>
+              <rect x="56" y="310" width="22" height="46" rx="6" fill="#7189b0"/>
+              <rect x="218" y="310" width="22" height="46" rx="6" fill="#7189b0"/>
+              <path d="M240 333h60a45 45 0 0 1 45 45" fill="none" stroke="url(#pipeG)" stroke-width="30" stroke-linecap="round"/>
+              <path d="M84 333h140" stroke="#7cf0ff" stroke-width="4" stroke-linecap="round" class="flow" opacity=".8"/>
+            </g>
+            <!-- ripples + drop -->
+            <ellipse class="ripple" cx="345" cy="402" rx="22" ry="6" fill="none" stroke="#7cf0ff" stroke-width="2"/>
+            <ellipse class="ripple r2" cx="345" cy="402" rx="22" ry="6" fill="none" stroke="#7cf0ff" stroke-width="2"/>
+            <g class="drip">
+              <path d="M345 372c-13 0-24-11-24-24 0-18 24-44 24-44s24 26 24 44c0 13-11 24-24 24z" fill="url(#waterG)"/>
+              <path d="M335 340c0-6 4-12 8-17" stroke="rgba(255,255,255,.7)" stroke-width="4" stroke-linecap="round" fill="none"/>
+            </g>
+            <!-- bolt -->
+            <g class="bolt-glow">
+              <path d="M278 62 150 262h78l-22 140 138-212h-84l18-128z" fill="url(#boltG)"/>
+              <path d="M278 62 150 262h78" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="3" stroke-linejoin="round"/>
+            </g>
+            <!-- sparks -->
+            <g fill="none" stroke="#ffe27a" stroke-width="4" stroke-linecap="round">
+              <path class="spark" d="M126 120l-20-12"/><path class="spark" d="M138 92l-6-20"/><path class="spark" d="M330 96l18-14"/><path class="spark" d="M352 140l22-4"/>
+            </g>
+            <!-- plug -->
+            <g fill="none" stroke="#9fb4d6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".9"><path d="M96 150v-26M126 150v-26M84 150h54v14a27 27 0 0 1-54 0v-14zM111 191v28"/></g>
+            <circle cx="392" cy="150" r="5" fill="#ffd35c" class="spark"/><circle cx="410" cy="190" r="3" fill="#7cf0ff" class="spark"/><circle cx="84" cy="270" r="3.5" fill="#ffd35c" class="spark"/>
+          </svg>
+          <div class="chip c1"><svg class="ic" aria-hidden="true"><use href="#i-bolt"/></svg><span>Electrical</span></div>
+          <div class="chip c2"><svg class="ic" aria-hidden="true"><use href="#i-drop"/></svg><span>Plumbing</span></div>
+          <div class="chip c3"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg><span>Home Repairs</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Electrical Repairs <svg class="ic"><use href="#i-bolt"/></svg> Wiring <svg class="ic"><use href="#i-plug"/></svg> Fans &amp; Lights <svg class="ic"><use href="#i-bulb"/></svg> Taps &amp; Pipes <svg class="ic"><use href="#i-drop"/></svg> Bathroom Plumbing <svg class="ic"><use href="#i-bath"/></svg> Leakage Repair <svg class="ic"><use href="#i-wrench"/></svg> Madurai <svg class="ic"><use href="#i-pin"/></svg></span>
+        <span>Electrical Repairs <svg class="ic"><use href="#i-bolt"/></svg> Wiring <svg class="ic"><use href="#i-plug"/></svg> Fans &amp; Lights <svg class="ic"><use href="#i-bulb"/></svg> Taps &amp; Pipes <svg class="ic"><use href="#i-drop"/></svg> Bathroom Plumbing <svg class="ic"><use href="#i-bath"/></svg> Leakage Repair <svg class="ic"><use href="#i-wrench"/></svg> Madurai <svg class="ic"><use href="#i-pin"/></svg></span>
+        <span>Electrical Repairs <svg class="ic"><use href="#i-bolt"/></svg> Wiring <svg class="ic"><use href="#i-plug"/></svg> Fans &amp; Lights <svg class="ic"><use href="#i-bulb"/></svg> Taps &amp; Pipes <svg class="ic"><use href="#i-drop"/></svg> Bathroom Plumbing <svg class="ic"><use href="#i-bath"/></svg> Leakage Repair <svg class="ic"><use href="#i-wrench"/></svg> Madurai <svg class="ic"><use href="#i-pin"/></svg></span>
+        <span>Electrical Repairs <svg class="ic"><use href="#i-bolt"/></svg> Wiring <svg class="ic"><use href="#i-plug"/></svg> Fans &amp; Lights <svg class="ic"><use href="#i-bulb"/></svg> Taps &amp; Pipes <svg class="ic"><use href="#i-drop"/></svg> Bathroom Plumbing <svg class="ic"><use href="#i-bath"/></svg> Leakage Repair <svg class="ic"><use href="#i-wrench"/></svg> Madurai <svg class="ic"><use href="#i-pin"/></svg></span>
+      </div>
+    </div>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section light" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Our Services</span>
+          <h2 id="services-title">Home repairs, electrical and plumbing, done right</h2>
+          <p>Whatever goes wrong at home, one dependable team in Madurai can fix it.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="icon-box"><svg class="ic" aria-hidden="true"><use href="#i-bolt"/></svg></div>
+            <h3>Electrical Repairs</h3>
+            <p>Fault finding and repair for tripping MCBs, power loss, burning smells and faulty appliances at home.</p>
+          </article>
+          <article class="card reveal" style="--d:.05s">
+            <div class="icon-box"><svg class="ic" aria-hidden="true"><use href="#i-plug"/></svg></div>
+            <h3>Wiring &amp; Rewiring</h3>
+            <p>Safe, tidy new wiring and rewiring for houses, flats and shops, done to a neat finish.</p>
+          </article>
+          <article class="card reveal" style="--d:.1s">
+            <div class="icon-box"><svg class="ic" aria-hidden="true"><use href="#i-switch"/></svg></div>
+            <h3>Switch &amp; Socket Installation</h3>
+            <p>New switches, sockets and boards fitted or replaced, including loose and damaged ones.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-box"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg></div>
+            <h3>Lighting Installation</h3>
+            <p>Tube lights, LED panels, decorative and outdoor lights installed securely.</p>
+          </article>
+          <article class="card reveal" style="--d:.05s">
+            <div class="icon-box"><svg class="ic" aria-hidden="true"><use href="#i-fan"/></svg></div>
+            <h3>Fan Installation &amp; Repair</h3>
+            <p>Ceiling and exhaust fans fitted, serviced and repaired, from noise to slow speed.</p>
+          </article>
+          <article class="card water reveal" style="--d:.1s">
+            <div class="icon-box"><svg class="ic" aria-hidden="true"><use href="#i-wrench"/></svg></div>
+            <h3>Plumbing Repairs</h3>
+            <p>Quick fixes for blocked drains, low water pressure, faulty fittings and everyday plumbing issues.</p>
+          </article>
+          <article class="card water reveal">
+            <div class="icon-box"><svg class="ic" aria-hidden="true"><use href="#i-pipe"/></svg></div>
+            <h3>Pipe &amp; Tap Repairs</h3>
+            <p>Dripping taps, damaged pipes and worn valves repaired or replaced properly.</p>
+          </article>
+          <article class="card water reveal" style="--d:.05s">
+            <div class="icon-box"><svg class="ic" aria-hidden="true"><use href="#i-bath"/></svg></div>
+            <h3>Bathroom Plumbing</h3>
+            <p>Fitting and repair of basins, showers, toilets, geysers and bathroom pipework.</p>
+          </article>
+          <article class="card water reveal" style="--d:.1s">
+            <div class="icon-box"><svg class="ic" aria-hidden="true"><use href="#i-drop"/></svg></div>
+            <h3>Water Leakage Repair</h3>
+            <p>Find and stop leaks fast to protect your walls, ceilings and water bill.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section class="section dark why" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Why Choose Us</span>
+          <h2 id="why-title">A service you can trust from the first call</h2>
+          <p>We keep it simple: show up quickly, do the job right and be honest about the cost.</p>
+        </div>
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <div class="num"><svg class="ic" aria-hidden="true"><use href="#i-bolt"/></svg> 01</div>
+            <h3>Quick Response</h3>
+            <p>We pick up, plan and arrive promptly, because electrical and plumbing problems rarely wait.</p>
+          </article>
+          <article class="why-card reveal" style="--d:.07s">
+            <div class="num"><svg class="ic" aria-hidden="true"><use href="#i-award"/></svg> 02</div>
+            <h3>Experienced Service</h3>
+            <p>Skilled technicians who handle everything from small fixes to complete rewiring and pipework.</p>
+          </article>
+          <article class="why-card reveal" style="--d:.14s">
+            <div class="num"><svg class="ic" aria-hidden="true"><use href="#i-tag"/></svg> 03</div>
+            <h3>Transparent Pricing</h3>
+            <p>A clear quote before work begins, so there are no surprises when the job is done.</p>
+          </article>
+          <article class="why-card reveal" style="--d:.21s">
+            <div class="num"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg> 04</div>
+            <h3>Quality Work</h3>
+            <p>Good materials, careful workmanship and a tidy site, so the fix lasts.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <figure class="house-card reveal left" style="margin:0">
+          <svg viewBox="0 0 480 420" role="img" aria-label="Illustration of a house showing electrical wiring, a ceiling fan and bulb on the top floor, and a kitchen tap and shower with plumbing pipes on the ground floor">
+            <!-- ground -->
+            <rect x="16" y="374" width="448" height="6" rx="3" fill="#1b3366"/>
+            <!-- roof + walls -->
+            <path d="M40 180 240 50 440 180z" fill="#1b3366" stroke="#ffb703" stroke-width="5" stroke-linejoin="round"/>
+            <rect x="68" y="180" width="344" height="194" fill="#0f2147" stroke="#4a6aa8" stroke-width="3"/>
+            <path d="M68 278H412M240 180V374" stroke="#4a6aa8" stroke-width="3"/>
+            <!-- electrical: ceiling wires -->
+            <path d="M84 198H396" fill="none" stroke="#ffb703" stroke-width="3" stroke-linecap="round" class="flow"/>
+            <path d="M150 198V224M330 198V214" fill="none" stroke="#ffb703" stroke-width="3" stroke-linecap="round"/>
+            <!-- bulb -->
+            <circle cx="150" cy="240" r="34" fill="#ffd35c" class="bulbglow"/>
+            <path d="M143 226h14v6h-14z" fill="#9fb4d6"/>
+            <circle cx="150" cy="242" r="12" fill="#ffe27a"/>
+            <!-- fan -->
+            <g class="fan" fill="#9fb4d6">
+              <ellipse cx="330" cy="236" rx="5" ry="17"/>
+              <ellipse cx="330" cy="236" rx="17" ry="5"/>
+            </g>
+            <circle cx="330" cy="236" r="5" fill="#ffb703"/>
+            <!-- socket -->
+            <rect x="82" y="250" width="16" height="20" rx="4" fill="none" stroke="#ffb703" stroke-width="3"/>
+            <circle cx="87" cy="258" r="1.6" fill="#ffb703"/><circle cx="93" cy="258" r="1.6" fill="#ffb703"/>
+            <!-- plumbing: main pipe -->
+            <path d="M84 362H396V312" fill="none" stroke="#22d3ee" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".35"/>
+            <path d="M84 362H396V312" fill="none" stroke="#7cf0ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="flow slow"/>
+            <!-- kitchen counter + tap -->
+            <rect x="96" y="334" width="116" height="40" rx="4" fill="#1b3366" stroke="#4a6aa8" stroke-width="2"/>
+            <path d="M154 334V306q0-10 10-10h14" fill="none" stroke="#9fb4d6" stroke-width="6" stroke-linecap="round"/>
+            <path d="M154 362V346" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
+            <path class="fall" d="M180 306c-3 4-4 6-4 8a4 4 0 0 0 8 0c0-2-1-4-4-8z" fill="#7cf0ff"/>
+            <!-- shower -->
+            <path d="M396 312V292H368" fill="none" stroke="#9fb4d6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M350 292h26l-5 12h-16z" fill="#9fb4d6"/>
+            <g fill="#7cf0ff">
+              <ellipse class="fall" cx="357" cy="312" rx="2" ry="4"/><ellipse class="fall d2" cx="363" cy="312" rx="2" ry="4"/><ellipse class="fall d3" cx="369" cy="312" rx="2" ry="4"/>
+              <ellipse class="fall d2" cx="360" cy="316" rx="2" ry="4"/><ellipse class="fall" cx="366" cy="316" rx="2" ry="4"/>
+            </g>
+          </svg>
+          <figcaption>Electrical and plumbing, handled under one roof</figcaption>
+        </figure>
+
+        <div class="about-copy reveal right">
+          <span class="eyebrow">About Us</span>
+          <h2 id="about-title" class="h2-lg" style="margin-bottom:1.2rem">Your local electrician and plumber in Madurai</h2>
+          <p>MK Electric and Plumbing Services is a reliable local service provider based in Madurai. Most of our customers are families who need quick, honest repairs at home, from a dead switch to a leaking tap, and that's where we do our best work.</p>
+          <p>We turn up, explain the problem in plain language, agree the price up front and leave your home clean. And it's not only houses: wherever you need an electrician or plumber in Madurai, we're happy to help.</p>
+
+          <div class="places">
+            <h3>Places we work</h3>
+            <div class="place-tags">
+              <span class="ptag main"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg> Homes (our main focus)</span>
+              <span class="ptag"><svg class="ic" aria-hidden="true"><use href="#i-building"/></svg> Apartments</span>
+              <span class="ptag"><svg class="ic" aria-hidden="true"><use href="#i-shop"/></svg> Shops</span>
+              <span class="ptag"><svg class="ic" aria-hidden="true"><use href="#i-briefcase"/></svg> Offices</span>
+              <span class="ptag"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg> Anywhere in Madurai</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EMERGENCY CTA ============ -->
+    <section class="emergency" aria-labelledby="emergency-title">
+      <div class="container wrap">
+        <div class="reveal">
+          <span class="flag"><svg class="ic" aria-hidden="true"><use href="#i-siren"/></svg> Emergency Help</span>
+          <h2 id="emergency-title">Need an Electrician or Plumber Urgently?</h2>
+          <p>Call us now for fast assistance.</p>
+        </div>
+        <div class="actions reveal" style="--d:.1s">
+          <a class="btn btn-dark btn-lg" data-call href="tel:+919443831696">
+            <svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg> Call Now
+          </a>
+          <a class="btn btn-wa btn-lg" data-wa href="https://wa.me/919443831696" target="_blank" rel="noopener">
+            <svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg> WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">How It Works</span>
+          <h2 id="how-title">Fixed in three simple steps</h2>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <svg class="pic" viewBox="0 0 80 80" role="img" aria-label="Phone ringing">
+              <g fill="none" stroke="#ffb703" stroke-width="3" stroke-linecap="round"><path class="wave" d="M14 30q-6 10 0 20"/><path class="wave w2" d="M7 24q-12 16 0 32"/><path class="wave" d="M66 30q6 10 0 20"/><path class="wave w2" d="M73 24q12 16 0 32"/></g>
+              <g class="shake"><rect x="26" y="12" width="28" height="56" rx="7" fill="#0f1d3a"/><rect x="30" y="18" width="20" height="38" rx="3" fill="#22d3ee" opacity=".85"/><circle cx="40" cy="62" r="2.5" fill="#9fb4d6"/></g>
+            </svg>
+            <span class="badge">1</span>
+            <h3>Contact Us</h3>
+            <p>Call or message us on WhatsApp and tell us what's wrong.</p>
+          </article>
+          <article class="step reveal" style="--d:.1s">
+            <svg class="pic" viewBox="0 0 80 80" role="img" aria-label="Technician travelling to your home">
+              <path d="M6 64H74" stroke="#9fb4d6" stroke-width="3" stroke-dasharray="6 8" stroke-linecap="round" class="flow"/>
+              <path d="M46 62V40l17-14 17 14v22z" fill="#0f1d3a" transform="translate(-14 0)"/>
+              <path d="M30 40 49 24l19 16" fill="none" stroke="#ffb703" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+              <rect x="44" y="46" width="10" height="16" rx="2" fill="#ffb703"/>
+              <g class="hop"><path d="M16 36c0-8 6-14 12-14s12 6 12 14c0 9-12 22-12 22S16 45 16 36z" fill="#22d3ee"/><circle cx="28" cy="35" r="5" fill="#0f1d3a"/></g>
+            </svg>
+            <span class="badge">2</span>
+            <h3>We Arrive</h3>
+            <p>Our technician reaches you at a time that suits you, inspects and gives a clear quote.</p>
+          </article>
+          <article class="step reveal" style="--d:.2s">
+            <svg class="pic" viewBox="0 0 80 80" role="img" aria-label="Home with a check mark, problem solved">
+              <path d="M12 40 40 16l28 24" fill="none" stroke="#ffb703" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+              <path d="M18 38v28h44V38" fill="#0f1d3a"/>
+              <g class="popin"><circle cx="40" cy="52" r="12" fill="#12a150"/><path d="M34 52l5 5 8-10" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g>
+            </svg>
+            <span class="badge">3</span>
+            <h3>Problem Solved</h3>
+            <p>We complete the work neatly, test it and leave everything clean.</p>
+          </article>
+        </div>
+
+        <div class="flex-card reveal zoom">
+          <span class="ib"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg></span>
+          <div>
+            <h3>Your time, your schedule</h3>
+            <p>No fixed timings. Tell us when you're free and we'll come and fix it at your convenience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section light" id="testimonials" aria-labelledby="t-title">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Testimonials</span>
+          <h2 id="t-title">What customers say</h2>
+        </div>
+        <div class="t-grid">
+          <figure class="quote reveal" style="margin:0">
+            <div class="stars" role="img" aria-label="5 out of 5 stars"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
+            <blockquote>"The MCB kept tripping every evening. They came at the time we were free, found the fault quickly and everything worked again. Very professional."</blockquote>
+            <figcaption class="who"><span class="avatar" aria-hidden="true">R</span><span><strong>Ramesh K.</strong><span>Home owner, Madurai (sample)</span></span></figcaption>
+          </figure>
+          <figure class="quote reveal" style="margin:0;--d:.08s">
+            <div class="stars" role="img" aria-label="5 out of 5 stars"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
+            <blockquote>"A pipe was leaking inside the bathroom wall. They explained the problem clearly, gave a fair price and fixed it neatly without making a mess."</blockquote>
+            <figcaption class="who"><span class="avatar" aria-hidden="true">S</span><span><strong>Sangeetha M.</strong><span>Apartment resident, Madurai (sample)</span></span></figcaption>
+          </figure>
+          <figure class="quote reveal" style="margin:0;--d:.16s">
+            <div class="stars" role="img" aria-label="5 out of 5 stars"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
+            <blockquote>"We needed new lights and fans installed in our shop. The work was tidy, on time and exactly as quoted. We'll call them again."</blockquote>
+            <figcaption class="who"><span class="avatar" aria-hidden="true">A</span><span><strong>Arun P.</strong><span>Shop owner, Madurai (sample)</span></span></figcaption>
+          </figure>
+        </div>
+        <p class="note">Sample testimonials shown as placeholders. Replace with real customer reviews.</p>
+      </div>
+    </section>
+
+    <!-- ============ SERVICE AREA ============ -->
+    <section class="section dark" id="area" aria-labelledby="area-title">
+      <div class="container area-grid">
+        <div class="reveal left">
+          <span class="eyebrow">Service Area</span>
+          <h2 id="area-title" class="h2-lg">Proudly serving Madurai</h2>
+          <p class="area-lead">Houses, apartments, shops and offices, wherever you are in the city, we'll come to you.</p>
+          <div class="area-badge"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg> Madurai</div>
+          <p class="area-note">We currently provide our services within Madurai only.</p>
+        </div>
+        <div class="area-art reveal right">
+          <svg viewBox="0 0 300 320" role="img" aria-label="Illustration of a temple tower with a location pin marking Madurai">
+            <ellipse cx="150" cy="292" rx="120" ry="14" fill="rgba(255,255,255,.07)"/>
+            <ellipse class="pinring" cx="150" cy="292" rx="60" ry="9" fill="none" stroke="#22d3ee" stroke-width="2"/>
+            <ellipse class="pinring p2" cx="150" cy="292" rx="60" ry="9" fill="none" stroke="#22d3ee" stroke-width="2"/>
+            <g stroke="#ffb703" stroke-opacity=".7" stroke-width="2" stroke-linejoin="round">
+              <rect x="62" y="262" width="176" height="30" fill="#17305f"/>
+              <rect x="72" y="236" width="156" height="26" fill="#1d3b73"/>
+              <rect x="82" y="210" width="136" height="26" fill="#17305f"/>
+              <rect x="92" y="184" width="116" height="26" fill="#1d3b73"/>
+              <rect x="102" y="158" width="96" height="26" fill="#17305f"/>
+              <rect x="112" y="132" width="76" height="26" fill="#1d3b73"/>
+              <rect x="122" y="108" width="56" height="24" fill="#17305f"/>
+              <path d="M130 108q20-30 40 0z" fill="#ffb703" fill-opacity=".9"/>
+            </g>
+            <g fill="#ffb703" fill-opacity=".55">
+              <rect x="136" y="270" width="28" height="22" rx="3"/>
+              <rect x="86" y="244" width="10" height="12" rx="2"/><rect x="204" y="244" width="10" height="12" rx="2"/><rect x="144" y="244" width="12" height="12" rx="2"/>
+              <rect x="100" y="218" width="10" height="12" rx="2"/><rect x="190" y="218" width="10" height="12" rx="2"/><rect x="144" y="218" width="12" height="12" rx="2"/>
+            </g>
+            <g class="pinbob">
+              <path d="M150 90c-18 0-30-13-30-29 0-22 30-52 30-52s30 30 30 52c0 16-12 29-30 29z" transform="translate(0 -4)" fill="#ff7a1a"/>
+              <circle cx="150" cy="52" r="11" fill="#fff"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section light" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Contact Us</span>
+          <h2 id="contact-title">Get your problem solved</h2>
+          <p>Fill in the form and your request goes straight to us on WhatsApp.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-left reveal left">
+          <div class="info-card">
+            <h3>Reach us</h3>
+            <ul class="info-list">
+              <li><span class="ib"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span><div><small>Phone / WhatsApp</small><span class="v" data-phone-text>+91 94438 31696</span></div></li>
+              <li><span class="ib"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg></span><div><small>Service Area</small><span class="v sm">Madurai (within Madurai only)</span></div></li>
+              <li><span class="ib"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg></span><div><small>Timing</small><span class="v sm">No fixed hours. Tell us when you're free and we'll come at your convenience.</span></div></li>
+            </ul>
+          </div>
+          <figure class="crew-card" style="margin:0">
+            <figcaption>
+              <strong>Electrician &amp; plumber, one call</strong>
+              <span>Friendly technicians who come to your home in Madurai.</span>
+            </figcaption>
+            <svg viewBox="0 0 480 300" role="img" aria-label="Illustration of a friendly electrician in a yellow hard hat holding a tester and a plumber in a blue cap holding a pipe wrench and a pipe">
+              <defs>
+                <linearGradient id="crewHat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe27a"/><stop offset="1" stop-color="#ffb703"/></linearGradient>
+              </defs>
+              <ellipse cx="240" cy="300" rx="226" ry="26" fill="rgba(255,255,255,.06)"/>
+              <path class="bolt-glow" d="M78 40 62 66h10l-4 18 16-24H74z" fill="#ffb703"/>
+              <path class="drip" d="M414 44s-12 13-12 22a12 12 0 0 0 24 0c0-9-12-22-12-22z" fill="#22d3ee" opacity=".9"/>
+
+              <!-- ELECTRICIAN -->
+              <g class="bob">
+                <rect x="92" y="172" width="104" height="140" rx="30" fill="#ffb703"/>
+                <path d="M126 172l18 20 18-20z" fill="#e69a00"/>
+                <rect x="92" y="232" width="104" height="10" fill="#fff" opacity=".85"/>
+                <path d="M100 192 82 248" stroke="#e69a00" stroke-width="22" stroke-linecap="round"/>
+                <circle cx="80" cy="256" r="11" fill="#c98a5e"/>
+                <rect x="132" y="150" width="24" height="26" rx="8" fill="#b87a52"/>
+                <circle cx="112" cy="132" r="6" fill="#c98a5e"/><circle cx="176" cy="132" r="6" fill="#c98a5e"/>
+                <circle cx="144" cy="128" r="32" fill="#c98a5e"/>
+                <path d="M106 120a38 34 0 0 1 76 0z" fill="url(#crewHat)"/>
+                <rect x="98" y="116" width="92" height="9" rx="4.5" fill="#f59e0b"/>
+                <rect x="138" y="84" width="12" height="12" rx="3" fill="#f59e0b"/>
+                <path d="M146 96l-8 10h5l-2 8 8-11h-5z" fill="#0f1d3a"/>
+                <circle cx="132" cy="134" r="3.2" fill="#1a1200"/><circle cx="156" cy="134" r="3.2" fill="#1a1200"/>
+                <path d="M134 145q10 9 20 0" fill="none" stroke="#1a1200" stroke-width="3" stroke-linecap="round"/>
+                <path d="M186 192 226 226" stroke="#ffb703" stroke-width="24" stroke-linecap="round"/>
+                <path d="M232 226 266 190" stroke="#9fb4d6" stroke-width="6" stroke-linecap="round"/>
+                <path d="M224 236 238 222" stroke="#ff7a1a" stroke-width="12" stroke-linecap="round"/>
+                <circle cx="230" cy="230" r="12" fill="#c98a5e"/>
+                <path class="twinkle" d="M268 174l2.500 8 8 2.500-8 2.500-2.500 8-2.500-8-8-2.500 8-2.500z" fill="#ffe27a"/>
+                <rect x="102" y="258" width="84" height="22" rx="11" fill="#0f1d3a" opacity=".92"/>
+                <text x="144" y="273" text-anchor="middle" font-size="9.5" font-weight="800" fill="#fff" letter-spacing=".4" font-family="ui-sans-serif,system-ui,sans-serif">ELECTRICIAN</text>
+              </g>
+
+              <!-- PLUMBER -->
+              <g class="bob" style="animation-delay:-1.7s">
+                <rect x="288" y="172" width="104" height="140" rx="30" fill="#2f80ed"/>
+                <path d="M308 172v50a8 8 0 0 0 8 8h48a8 8 0 0 0 8-8v-50z" fill="#1d5fbf"/>
+                <rect x="326" y="200" width="28" height="20" rx="4" fill="#2f80ed"/>
+                <circle cx="316" cy="184" r="3" fill="#ffd35c"/><circle cx="364" cy="184" r="3" fill="#ffd35c"/>
+                <rect x="246" y="240" width="50" height="18" rx="7" fill="#9fb4d6"/>
+                <rect x="246" y="236" width="10" height="26" rx="4" fill="#7189b0"/>
+                <path class="fall" d="M251 264c-3 4-4 6-4 8a4 4 0 0 0 8 0c0-2-1-4-4-8z" fill="#7cf0ff"/>
+                <path d="M298 192 290 240" stroke="#1d5fbf" stroke-width="22" stroke-linecap="round"/>
+                <circle cx="292" cy="249" r="11" fill="#b97a50"/>
+                <rect x="328" y="150" width="24" height="26" rx="8" fill="#a56c46"/>
+                <circle cx="308" cy="132" r="6" fill="#b97a50"/><circle cx="372" cy="132" r="6" fill="#b97a50"/>
+                <circle cx="340" cy="128" r="32" fill="#b97a50"/>
+                <path d="M304 122a36 32 0 0 1 72 0z" fill="#0e3d85"/>
+                <path d="M372 120h30a10 7 0 0 1-10 7h-20z" fill="#0a2f68"/>
+                <circle cx="340" cy="90" r="4" fill="#22d3ee"/>
+                <path d="M340 100s-6 6.500-6 11a6 6 0 0 0 12 0c0-4.500-6-11-6-11z" fill="#22d3ee"/>
+                <circle cx="328" cy="134" r="3.2" fill="#1a1200"/><circle cx="352" cy="134" r="3.2" fill="#1a1200"/>
+                <path d="M330 145q10 9 20 0" fill="none" stroke="#1a1200" stroke-width="3" stroke-linecap="round"/>
+                <path d="M386 192 420 214" stroke="#2f80ed" stroke-width="24" stroke-linecap="round"/>
+                <path d="M424 218 450 170" stroke="#9fb4d6" stroke-width="8" stroke-linecap="round"/>
+                <circle cx="452" cy="166" r="11" fill="#c9d6ee"/>
+                <path d="M452 166l10-12 6 10z" fill="#0f1d3a"/>
+                <circle cx="424" cy="218" r="12" fill="#b97a50"/>
+                <rect x="298" y="258" width="84" height="22" rx="11" fill="#0f1d3a" opacity=".92"/>
+                <text x="340" y="273" text-anchor="middle" font-size="9.5" font-weight="800" fill="#fff" letter-spacing=".4" font-family="ui-sans-serif,system-ui,sans-serif">PLUMBER</text>
+              </g>
+            </svg>
+          </figure>
+        </div>
+
+          <div class="form-card reveal right">
+            <div id="formWrap">
+              <h3>Request a service</h3>
+              <p>Tell us what you need. After you submit, WhatsApp opens with your details ready to send.</p>
+              <form id="contactForm" novalidate>
+                <div class="field">
+                  <label for="name">Name <em>*</em></label>
+                  <input class="input" id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" />
+                  <div class="err" id="err-name">Please enter your name.</div>
+                </div>
+                <div class="field">
+                  <label for="phone">Phone <em>*</em></label>
+                  <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Your phone number" />
+                  <div class="err" id="err-phone">Please enter a valid phone number (7 to 15 digits).</div>
+                </div>
+                <div class="field">
+                  <label for="service">Service Needed <em>*</em></label>
+                  <select class="input" id="service" name="service">
+                    <option value="">Select a service</option>
+                    <option>Electrical Repairs</option>
+                    <option>Wiring &amp; Rewiring</option>
+                    <option>Switch &amp; Socket Installation</option>
+                    <option>Lighting Installation</option>
+                    <option>Fan Installation &amp; Repair</option>
+                    <option>Plumbing Repairs</option>
+                    <option>Pipe &amp; Tap Repairs</option>
+                    <option>Bathroom Plumbing</option>
+                    <option>Water Leakage Repair</option>
+                    <option>Emergency Service</option>
+                    <option>Other</option>
+                  </select>
+                  <div class="err" id="err-service">Please choose a service.</div>
+                </div>
+                <div class="field">
+                  <label for="when">When are you free? <span>(optional)</span></label>
+                  <input class="input" id="when" name="when" type="text" placeholder="e.g. Today evening, tomorrow morning" />
+                </div>
+                <div class="field">
+                  <label for="message">Message <span>(optional)</span></label>
+                  <textarea class="input" id="message" name="message" placeholder="Briefly describe the problem and your area in Madurai"></textarea>
+                </div>
+                <button type="submit" class="btn btn-wa btn-lg"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg> Send on WhatsApp</button>
+                <p class="fine">We serve within Madurai only. For emergencies, please call us directly.</p>
+              </form>
+            </div>
+
+            <div class="success" id="success" role="status" aria-live="polite">
+              <div class="big"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></div>
+              <h3>Thanks, <span id="successName">friend</span>!</h3>
+              <p>Your details are ready in WhatsApp. Just tap <strong>Send</strong> and we'll get back to you at a time that suits you.</p>
+              <a class="btn btn-wa" id="successWa" href="https://wa.me/919443831696" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg> WhatsApp didn't open? Tap here</a>
+              <p class="fine"><a href="#contact" id="again" style="text-decoration:underline">Submit another request</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <a href="#home" class="brand"><span class="logo-box"><span class="logo-wrap"><svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><use href="#logo"/></svg></span></span><span class="brand-text">MK Electric and Plumbing Services</span></a>
+          <p>Reliable electrical and plumbing services for homes and businesses in Madurai, with fast response and honest pricing.</p>
+        </div>
+        <nav aria-label="Quick links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Electrical Repairs</a></li>
+            <li><a href="#services">Wiring &amp; Rewiring</a></li>
+            <li><a href="#services">Plumbing Repairs</a></li>
+            <li><a href="#services">Leakage Repair</a></li>
+            <li><a href="#services">Bathroom Plumbing</a></li>
+          </ul>
+        </div>
+        <div class="foot-contact">
+          <h4>Contact</h4>
+          <ul>
+            <li><a data-call href="tel:+919443831696"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span data-phone-text>+91 94438 31696</span></a></li>
+            <li><a data-wa href="https://wa.me/919443831696" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg><span>Chat on WhatsApp</span></a></li>
+            <li><span style="display:inline-flex;align-items:center;gap:.6rem;font-weight:600"><svg class="ic" aria-hidden="true" style="width:1.1rem;height:1.1rem;color:var(--amber)"><use href="#i-pin"/></svg>Madurai</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">
+        <span>&copy; <span id="year">2026</span> MK Electric and Plumbing Services. All rights reserved.</span>
+        <span>Fast. Professional. Reliable.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* =====================================================================
+       SETTINGS: EDIT YOUR BUSINESS DETAILS HERE (everything updates automatically)
+       ===================================================================== */
+    const CONFIG = {
+      businessName: "MK Electric and Plumbing Services",
+      phoneDisplay: "+91 94438 31696",   // shown on the page
+      phoneTel: "+919443831696",          // used in tel: links
+      whatsappNumber: "919443831696",     // country code + number, no + or spaces
+      whatsappMessage: "Hello MK Electric and Plumbing Services, I need help with a service in Madurai."
+    };
+
+    /* ---------- Apply settings ---------- */
+    const waBase = "https://wa.me/" + CONFIG.whatsappNumber;
+    const waLink = (text) => waBase + "?text=" + encodeURIComponent(text);
+    document.querySelectorAll("[data-call]").forEach(a => a.href = "tel:" + CONFIG.phoneTel);
+    document.querySelectorAll("[data-wa]").forEach(a => a.href = waLink(CONFIG.whatsappMessage));
+    document.querySelectorAll("[data-phone-text]").forEach(el => el.textContent = CONFIG.phoneDisplay);
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    /* ---------- Header: scroll progress + shadow ---------- */
+    const progress = document.getElementById("progress");
+    const header = document.getElementById("siteHeader");
+    let ticking = false;
+    function onScroll(){
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      progress.style.transform = "scaleX(" + (max > 0 ? h.scrollTop / max : 0) + ")";
+      header.classList.toggle("scrolled", h.scrollTop > 10);
+      ticking = false;
+    }
+    window.addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+    onScroll();
+
+    /* ---------- Mobile menu ---------- */
+    const menuBtn = document.getElementById("menuBtn");
+    const menu = document.getElementById("mobileMenu");
+    function setMenu(open){
+      menu.classList.toggle("open", open);
+      menuBtn.setAttribute("aria-expanded", String(open));
+    }
+    menuBtn.addEventListener("click", () => setMenu(!menu.classList.contains("open")));
+    menu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => setMenu(false)));
+    window.addEventListener("resize", () => { if (window.innerWidth >= 900) setMenu(false); });
+    document.addEventListener("keydown", e => { if (e.key === "Escape") setMenu(false); });
+
+    /* ---------- Scroll reveal ---------- */
+    const reveals = document.querySelectorAll(".reveal");
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+      }, { threshold: .12, rootMargin: "0px 0px -40px 0px" });
+      reveals.forEach(el => io.observe(el));
+    } else {
+      reveals.forEach(el => el.classList.add("in"));
+    }
+
+    /* ---------- Contact form -> WhatsApp ---------- */
+    const form = document.getElementById("contactForm");
+    const formWrap = document.getElementById("formWrap");
+    const success = document.getElementById("success");
+
+    function setError(id, bad){
+      const input = document.getElementById(id);
+      input.closest(".field").classList.toggle("bad", bad);
+      input.setAttribute("aria-invalid", bad ? "true" : "false");
+    }
+    function validate(){
+      const name = form.name.value.trim();
+      const phoneRaw = form.phone.value.trim();
+      const digits = phoneRaw.replace(/\D/g, "");
+      const checks = {
+        name: name.length >= 2,
+        phone: /^[+\d][\d\s\-()+]*$/.test(phoneRaw) && digits.length >= 7 && digits.length <= 15,
+        service: form.service.value !== ""
+      };
+      Object.entries(checks).forEach(([k, ok]) => setError(k, !ok));
+      const ok = Object.values(checks).every(Boolean);
+      if (!ok) form.querySelector('[aria-invalid="true"]').focus();
+      return ok;
+    }
+    ["name","phone","service"].forEach(id => {
+      document.getElementById(id).addEventListener("input", () => setError(id, false));
+      document.getElementById(id).addEventListener("change", () => setError(id, false));
+    });
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!validate()) return;
+      const d = {
+        name: form.name.value.trim(),
+        phone: form.phone.value.trim(),
+        service: form.service.value,
+        when: form.when.value.trim(),
+        message: form.message.value.trim()
+      };
+      const text =
+        `Hello ${CONFIG.businessName},\n` +
+        `Name: ${d.name}\n` +
+        `Phone: ${d.phone}\n` +
+        `Service needed: ${d.service}\n` +
+        `Free time: ${d.when || "Anytime"}\n` +
+        (d.message ? `Details: ${d.message}\n` : "") +
+        `Location: Madurai`;
+      const url = waLink(text);
+
+      document.getElementById("successName").textContent = d.name.split(" ")[0];
+      document.getElementById("successWa").href = url;
+      formWrap.style.display = "none";
+      success.classList.add("show");
+      success.scrollIntoView({ behavior: "smooth", block: "center" });
+
+      const w = window.open(url, "_blank", "noopener");
+      if (!w) { window.location.href = url; }
+    });
+
+    document.getElementById("again").addEventListener("click", (e) => {
+      e.preventDefault();
+      form.reset();
+      success.classList.remove("show");
+      formWrap.style.display = "";
+      form.name.focus();
+    });
+  </script>
+</body>
+</html>
