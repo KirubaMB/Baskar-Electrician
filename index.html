@@ -898,7 +898,7 @@
         <div class="section-head center reveal">
           <span class="eyebrow">Contact Us</span>
           <h2 id="contact-title">Get your problem solved</h2>
-          <p>Fill in the form and your enquiry goes straight to us by email.</p>
+          <p>Fill in the form and your request goes straight to us on WhatsApp.</p>
         </div>
 
         <div class="contact-grid">
@@ -984,7 +984,7 @@
           <div class="form-card reveal right">
             <div id="formWrap">
               <h3>Request a service</h3>
-              <p>Tell us what you need. We'll get your enquiry by email and send you a confirmation right away.</p>
+              <p>Tell us what you need. After you submit, WhatsApp opens with your details ready to send.</p>
               <form id="contactForm" novalidate>
                 <div class="field">
                   <label for="name">Name <em>*</em></label>
@@ -995,11 +995,6 @@
                   <label for="phone">Phone <em>*</em></label>
                   <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Your phone number" />
                   <div class="err" id="err-phone">Please enter a valid phone number (7 to 15 digits).</div>
-                </div>
-                <div class="field">
-                  <label for="email">Email <em>*</em></label>
-                  <input class="input" id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" />
-                  <div class="err" id="err-email">Please enter a valid email address.</div>
                 </div>
                 <div class="field">
                   <label for="service">Service Needed <em>*</em></label>
@@ -1027,9 +1022,7 @@
                   <label for="message">Message <span>(optional)</span></label>
                   <textarea class="input" id="message" name="message" placeholder="Briefly describe the problem and your area in Madurai"></textarea>
                 </div>
-                <input type="text" name="_honey" id="honey" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true" />
-                <button type="submit" id="submitBtn" class="btn btn-call btn-lg"><svg class="ic" aria-hidden="true"><use href="#i-send"/></svg> <span id="submitLabel">Send Enquiry</span></button>
-                <div class="err" id="formError" style="text-align:center;margin-top:.8rem" role="alert">Sorry, something went wrong while sending. Please try again or call us directly.</div>
+                <button type="submit" class="btn btn-wa btn-lg"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg> Send on WhatsApp</button>
                 <p class="fine">We serve within Madurai only. For emergencies, please call us directly.</p>
               </form>
             </div>
@@ -1037,8 +1030,8 @@
             <div class="success" id="success" role="status" aria-live="polite">
               <div class="big"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></div>
               <h3>Thanks, <span id="successName">friend</span>!</h3>
-              <p>Your enquiry has been sent. We've emailed you a confirmation, and we'll get back to you at a time that suits you.</p>
-              <a class="btn btn-wa" id="successWa" href="https://wa.me/919443831696" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg> Need it urgently? Chat on WhatsApp</a>
+              <p>Your details are ready in WhatsApp. Just tap <strong>Send</strong> and we'll get back to you at a time that suits you.</p>
+              <a class="btn btn-wa" id="successWa" href="https://wa.me/919443831696" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg> WhatsApp didn't open? Tap here</a>
               <p class="fine"><a href="#contact" id="again" style="text-decoration:underline">Submit another request</a></p>
             </div>
           </div>
@@ -1100,7 +1093,6 @@
       phoneDisplay: "+91 94438 31696",   // shown on the page
       phoneTel: "+919443831696",          // used in tel: links
       whatsappNumber: "919443831696",     // country code + number, no + or spaces
-      enquiryEmail: "mbkiruba04@gmail.com", // enquiries are delivered to this inbox
       whatsappMessage: "Hello MK Electric and Plumbing Services, I need help with a service in Madurai."
     };
 
@@ -1149,13 +1141,10 @@
       reveals.forEach(el => el.classList.add("in"));
     }
 
-    /* ---------- Contact form -> Email (FormSubmit) ---------- */
+    /* ---------- Contact form -> WhatsApp ---------- */
     const form = document.getElementById("contactForm");
     const formWrap = document.getElementById("formWrap");
     const success = document.getElementById("success");
-    const submitBtn = document.getElementById("submitBtn");
-    const submitLabel = document.getElementById("submitLabel");
-    const formError = document.getElementById("formError");
 
     function setError(id, bad){
       const input = document.getElementById(id);
@@ -1169,7 +1158,6 @@
       const checks = {
         name: name.length >= 2,
         phone: /^[+\d][\d\s\-()+]*$/.test(phoneRaw) && digits.length >= 7 && digits.length <= 15,
-        email: /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(form.email.value.trim()),
         service: form.service.value !== ""
       };
       Object.entries(checks).forEach(([k, ok]) => setError(k, !ok));
@@ -1177,68 +1165,39 @@
       if (!ok) form.querySelector('[aria-invalid="true"]').focus();
       return ok;
     }
-    ["name","phone","email","service"].forEach(id => {
+    ["name","phone","service"].forEach(id => {
       document.getElementById(id).addEventListener("input", () => setError(id, false));
       document.getElementById(id).addEventListener("change", () => setError(id, false));
     });
 
-    form.addEventListener("submit", async (e) => {
+    form.addEventListener("submit", (e) => {
       e.preventDefault();
-      formError.style.display = "none";
-      if (document.getElementById("honey").value) return; // spam bot
       if (!validate()) return;
       const d = {
         name: form.name.value.trim(),
         phone: form.phone.value.trim(),
-        email: form.email.value.trim(),
         service: form.service.value,
         when: form.when.value.trim(),
         message: form.message.value.trim()
       };
+      const text =
+        `Hello ${CONFIG.businessName},\n` +
+        `Name: ${d.name}\n` +
+        `Phone: ${d.phone}\n` +
+        `Service needed: ${d.service}\n` +
+        `Free time: ${d.when || "Anytime"}\n` +
+        (d.message ? `Details: ${d.message}\n` : "") +
+        `Location: Madurai`;
+      const url = waLink(text);
 
-      submitBtn.disabled = true;
-      submitLabel.textContent = "Sending...";
+      document.getElementById("successName").textContent = d.name.split(" ")[0];
+      document.getElementById("successWa").href = url;
+      formWrap.style.display = "none";
+      success.classList.add("show");
+      success.scrollIntoView({ behavior: "smooth", block: "center" });
 
-      const payload = {
-        _subject: "New enquiry: " + d.service + " (" + d.name + ")",
-        _template: "table",
-        _captcha: "false",
-        _autoresponse:
-          "Hi " + d.name + ",\n\n" +
-          "Thank you for contacting " + CONFIG.businessName + ". We have received your enquiry for \"" + d.service + "\" and our team will get back to you shortly, at a time that suits you.\n\n" +
-          "For anything urgent, please call us on " + CONFIG.phoneDisplay + ".\n\n" +
-          "Regards,\n" + CONFIG.businessName + ", Madurai",
-        Name: d.name,
-        Phone: d.phone,
-        email: d.email,
-        "Service needed": d.service,
-        "Free time": d.when || "Anytime",
-        Details: d.message || "-",
-        Location: "Madurai"
-      };
-
-      try {
-        const res = await fetch("https://formsubmit.co/ajax/" + CONFIG.enquiryEmail, {
-          method: "POST",
-          headers: { "Content-Type": "application/json", "Accept": "application/json" },
-          body: JSON.stringify(payload)
-        });
-        const out = await res.json().catch(() => ({}));
-        if (!res.ok || out.success === "false" || out.success === false) throw new Error("send failed");
-
-        const waText =
-          `Hello ${CONFIG.businessName},\nName: ${d.name}\nPhone: ${d.phone}\nService needed: ${d.service}\nLocation: Madurai`;
-        document.getElementById("successName").textContent = d.name.split(" ")[0];
-        document.getElementById("successWa").href = waLink(waText);
-        formWrap.style.display = "none";
-        success.classList.add("show");
-        success.scrollIntoView({ behavior: "smooth", block: "center" });
-      } catch (err) {
-        formError.style.display = "block";
-      } finally {
-        submitBtn.disabled = false;
-        submitLabel.textContent = "Send Enquiry";
-      }
+      const w = window.open(url, "_blank", "noopener");
+      if (!w) { window.location.href = url; }
     });
 
     document.getElementById("again").addEventListener("click", (e) => {
